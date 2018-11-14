@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/05 11:09:18 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/14 11:37:25 by mascagli         ###   ########.fr       */
+/*   Created: 2018/08/30 19:30:04 by mascagli          #+#    #+#             */
+/*   Updated: 2018/08/31 15:09:22 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strdup(const char *src)
+int		ft_sqrt(int nb)
 {
-	int		i;
-	char	*dest;
+	int x;
 
-	i = 0;
-	while (src[i])
-		i++;
-	dest = (char*)malloc(sizeof(*dest) * i + 1);
-	if (dest == NULL)
-		return (NULL);
-	i = 0;
-	while (src[i])
+	x = 0;
+	if (nb > 0 && nb < 2147483647)
 	{
-		dest[i] = src[i];
-		i++;
+		while (x < nb)
+		{
+			if (x * x == nb)
+				return (x);
+			x++;
+		}
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (0);
 }

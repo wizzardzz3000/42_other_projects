@@ -6,7 +6,7 @@
 #    By: mascagli <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 10:36:07 by mascagli          #+#    #+#              #
-#    Updated: 2018/11/08 14:08:35 by mascagli         ###   ########.fr        #
+#    Updated: 2018/11/14 13:49:59 by mascagli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,8 +70,13 @@ SRCS = ./ft_putchar.c  \
 	   ./ft_lstdel.c \
 	   ./ft_lstadd.c \
 	   ./ft_lstiter.c \
-	   ./ft_lstmap.c
-
+	   ./ft_lstmap.c \
+	   ./ft_putnbr_base.c \
+	   ./ft_is_prime.c \
+	   ./ft_sqrt.c \
+	   ./ft_strrev.c \
+	   ./ft_count_if.c \
+	   ./ft_is_sort.c
 
 OBJ = $(SRCS:.c=.o)
 

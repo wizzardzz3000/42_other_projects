@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_is_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/05 11:09:18 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/14 11:37:25 by mascagli         ###   ########.fr       */
+/*   Created: 2018/09/10 13:48:33 by mascagli          #+#    #+#             */
+/*   Updated: 2018/09/11 19:20:38 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strdup(const char *src)
+int		ft_is_sort(int *tab, int length, int (*f)(int, int))
 {
-	int		i;
-	char	*dest;
+	int i;
 
 	i = 0;
-	while (src[i])
-		i++;
-	dest = (char*)malloc(sizeof(*dest) * i + 1);
-	if (dest == NULL)
-		return (NULL);
-	i = 0;
-	while (src[i])
+	while (i + 1 < length)
 	{
-		dest[i] = src[i];
+		if ((*f)(tab[i], tab[i + 1]) >= 0)
+			return (0);
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (1);
 }

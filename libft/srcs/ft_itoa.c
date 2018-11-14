@@ -6,7 +6,7 @@
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 14:08:07 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/09 17:05:34 by mascagli         ###   ########.fr       */
+/*   Updated: 2018/11/13 16:39:06 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,16 @@ static int		count_tab(int nbr)
 	return (k);
 }
 
-char			*ft_itoa(int nbr)
+char			*ft_itoa(int n)
 {
 	char	*tab;
 	int		k;
 	int		sign;
 
-	if (nbr == -2147483648)
+	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	k = count_tab(ft_abs(nbr));
-	sign = (nbr < 0) ? -1 : 0;
+	k = count_tab(ft_abs(n));
+	sign = (n < 0) ? -1 : 0;
 	if (sign == -1)
 		k += 1;
 	tab = (char*)malloc(sizeof(*tab) * k + 1);
@@ -54,8 +54,8 @@ char			*ft_itoa(int nbr)
 	k -= 1;
 	while (k >= 0)
 	{
-		tab[k] = '0' + ft_abs(nbr % 10);
-		nbr = ft_abs(nbr / 10);
+		tab[k] = '0' + ft_abs(n % 10);
+		n = ft_abs(n / 10);
 		k--;
 	}
 	if (sign == -1)

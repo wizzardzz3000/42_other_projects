@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/05 11:09:18 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/14 11:37:25 by mascagli         ###   ########.fr       */
+/*   Created: 2018/08/30 20:23:37 by mascagli          #+#    #+#             */
+/*   Updated: 2018/09/05 20:37:45 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strdup(const char *src)
+int		ft_is_prime(int nb)
 {
-	int		i;
-	char	*dest;
+	int x;
 
-	i = 0;
-	while (src[i])
-		i++;
-	dest = (char*)malloc(sizeof(*dest) * i + 1);
-	if (dest == NULL)
-		return (NULL);
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	x = 2;
+	while (nb % x != 0 && x <= 46340)
+		x++;
+	return (nb > 0 && nb != 1 && (nb == 2 || nb % 2 != 0) &&
+			(nb % x != 0 || nb == x) ? 1 : 0);
 }

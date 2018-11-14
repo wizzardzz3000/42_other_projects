@@ -6,16 +6,14 @@
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 10:40:32 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/09 12:22:53 by mascagli         ###   ########.fr       */
+/*   Updated: 2018/11/14 11:29:34 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_putstr(char *str)
+void	ft_putstr(char const *str)
 {
-	if (str == NULL)
-		return (1);
-	write(1, str, ft_strlen(str));
-	return (0);
+	if (str != NULL)
+		write(1, str, ft_strlen((char *)str));
 }
