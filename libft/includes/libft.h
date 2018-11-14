@@ -6,7 +6,7 @@
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 15:50:04 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/14 13:46:33 by mascagli         ###   ########.fr       */
+/*   Updated: 2018/11/14 15:54:23 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,11 @@ int					ft_sqrt(int nb);
 char				*ft_strrev(char *str);
 int					ft_count_if(char **tab, int (*f)(char *));
 int					ft_is_sort(int *tab, int lenght, int (*f)(int, int));
+int					ft_str_is_alpha(char *str);
+int					ft_str_is_numeric(char *str);
+int					ft_str_is_lowercase(char *str);
+int					ft_str_is_uppercase(char *str);
+int					ft_str_is_printable(char *str);
 
 typedef struct		s_list
 {

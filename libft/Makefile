@@ -6,7 +6,7 @@
 #    By: mascagli <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 10:36:07 by mascagli          #+#    #+#              #
-#    Updated: 2018/11/14 13:49:59 by mascagli         ###   ########.fr        #
+#    Updated: 2018/11/14 15:59:01 by mascagli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,12 @@ SRCS = ./ft_putchar.c  \
 	   ./ft_sqrt.c \
 	   ./ft_strrev.c \
 	   ./ft_count_if.c \
-	   ./ft_is_sort.c
+	   ./ft_is_sort.c \
+	   ./ft_str_is_alpha.c \
+	   ./ft_str_is_numeric.c \
+	   ./ft_str_is_lowercase.c \
+	   ./ft_str_is_uppercase.c \
+	   ./ft_str_is_printable.c
 
 OBJ = $(SRCS:.c=.o)
 
