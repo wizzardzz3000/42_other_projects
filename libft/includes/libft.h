@@ -6,7 +6,7 @@
 /*   By: mascagli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 15:50:04 by mascagli          #+#    #+#             */
-/*   Updated: 2018/11/14 15:54:23 by mascagli         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:38:52 by mascagli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ int					ft_str_is_numeric(char *str);
 int					ft_str_is_lowercase(char *str);
 int					ft_str_is_uppercase(char *str);
 int					ft_str_is_printable(char *str);
+void				ft_print_words_tables(char **tab);
 
 typedef struct		s_list
 {

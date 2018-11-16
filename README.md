@@ -4,8 +4,6 @@ List of all my projects at 42 Paris
 
 ## 1 - libft
 
-![Sonar Badge](https://sonarcloud.io/api/project_badges/quality_gate?project=Scaglia3000_libft)
-
 Personal library in C
 
 ###  Unit tests 🛠
