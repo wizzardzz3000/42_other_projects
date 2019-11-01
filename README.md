@@ -1,5 +1,7 @@
 ![42 logo](https://i.imgur.com/fAwygL9.png)
 
+C projects at 42 Paris.
+
 ## 1 - Piscine_Reloaded
 
 Selection of exercices from the "piscine" month at 42.
