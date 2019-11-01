@@ -1,6 +1,6 @@
 ![42 logo](https://i.imgur.com/fAwygL9.png)
 
-## 1 - Piscine Reloaded
+## 1 - Piscine_Reloaded
 
 Selection of exercices from the "piscine" month at 42.
 
@@ -12,7 +12,7 @@ Subject:
 
 
 
-## 3 - Get Next Line
+## 3 - Get_Next_Line
 
 Subject:
 
