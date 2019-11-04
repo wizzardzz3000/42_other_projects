@@ -4,7 +4,7 @@ C projects at 42 Paris.
 
 ## 1 - Piscine_Reloaded
 
-Selection of exercices from the "piscine" month at 42.
+Selection of exercises from the "piscine" month at 42.
 
 ## 2 - libft
 
